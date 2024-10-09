@@ -1,0 +1,33 @@
+.our-section {
+    padding: 50px 0;
+    background-color: #ffffed;
+    background-image: url("../images/our-bg1.png"), url("../images/our-bg2.png"), url("../images/our-bg3.png");
+    background-repeat: no-repeat;
+    background-position: left 40px, right center, left bottom 170px ;
+    background-size: 201px 300px, 196px 337px, 158px 249px;
+}
+
+.our-title {
+    @include textStyle($CL:#000, $FS:50px, $FW:700, $LH:58px);
+    text-align: center;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.our-item {
+    @include display($space:center);
+    gap: 117px;
+}
+
+.our-content-wrapper {
+    width: 453px;
+}
+
+.our-content-wrapper h3 {
+    @include textStyle($CL:#333, $FS:48px, $FW:500, $LH:56px);
+    margin-bottom: 10px;
+}
+
+.our-content-wrapper p {
+    @include textStyle($CL:#333, $FS:22px, $FW:400, $LH:34px);
+}

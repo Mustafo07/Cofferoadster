@@ -1,0 +1,27 @@
+@mixin display($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+@mixin textStyle($CL, $FS, $FW, $LH) {
+    color: $CL;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+}
+
+@mixin buttonStyle ($W, $PY, $BG) {
+    width: $W;
+    padding: $PY 0;
+    background-color: $BG;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    transition: all 0.4s;
+
+    &:hover {
+        color: #0A775F;
+        border-color: #0A775F;
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,31 @@
+.site-header {
+    padding: 40px 0;
+    background-image: url("../images/bg-color.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 5px;
+}
+
+.header {
+    @include display($space: space-between);
+}
+
+.header-list {
+    @include display($space: start);
+    gap: 40px;
+}
+
+.header-link a {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.06px;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #0A775F;
+    }
+}

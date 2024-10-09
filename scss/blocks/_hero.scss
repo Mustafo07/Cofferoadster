@@ -1,0 +1,32 @@
+.hero-section {
+    position: relative;
+    background-image: url("../images/bg-color.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 116px 0 249px;
+}
+
+.hero-content-wrapper {
+    width: 464px;
+}
+
+.hero-content-wrapper h1 {
+    @include textStyle($CL:#000, $FS:64px, $FW:700, $LH:75px);
+}
+
+.hero-content-wrapper p {
+    @include textStyle($CL:#000, $FS:16px, $FW:400, $LH:24px);
+    margin: 24px 0 34px;
+}
+
+.hero-content-wrapper button {
+    @include buttonStyle ($W:193px, $PY:16px, $BG:#0A775F);
+    @include textStyle($CL:#fff, $FS:16px, $FW:500, $LH:18px);
+}
+
+.hero-bg {
+    position: absolute;
+    right: 0;
+    top: -47px;
+}
